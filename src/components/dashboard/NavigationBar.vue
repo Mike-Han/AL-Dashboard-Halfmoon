@@ -2,20 +2,20 @@
 defineProps({
   navbarItems: {
     type: Array,
-    required: true
+    required: true,
   },
   logoLight: {
     type: String,
-    required: true
+    required: true,
   },
   logoDark: {
     type: String,
-    required: true
+    required: true,
   },
   title: {
     type: String,
-    required: true
-  }
+    required: true,
+  },
 })
 </script>
 
@@ -34,11 +34,11 @@ defineProps({
       href="/"
       class="navbar-brand">
       <img
-        :src="logoLight"
+        src="../../assets/images/painel-light.png"
         class="hidden-dm h-25"
         alt="company logo" />
       <img
-        :src="logoDark"
+        src="../../assets/images/painel-dark.png"
         class="hidden-lm h-25"
         alt="company logo" />
       <div v-if="title != ''">

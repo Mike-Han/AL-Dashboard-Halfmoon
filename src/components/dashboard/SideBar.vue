@@ -2,20 +2,20 @@
 defineProps({
   sidebarItems: {
     type: Array,
-    required: true
+    required: true,
   },
   brand: {
     type: String,
-    default: ''
+    default: '',
   },
   brandImageLight: {
     type: String,
-    default: ''
+    default: '',
   },
   brandImageDark: {
     type: String,
-    default: ''
-  }
+    default: '',
+  },
 })
 </script>
 
@@ -27,12 +27,12 @@ defineProps({
         class="sidebar-brand">
         <img
           v-if="brandImageLight != ''"
-          :src="brandImageLight"
+          src="../../assets/images/logo-light.png"
           class="hidden-dm sidebar-brand h-50"
           alt="brand image" />
         <img
           v-if="brandImageDark != ''"
-          :src="brandImageDark"
+          src="../../assets/images/logo-dark.png"
           class="hidden-lm sidebar-brand h-50"
           alt="brand image" />
         <span
