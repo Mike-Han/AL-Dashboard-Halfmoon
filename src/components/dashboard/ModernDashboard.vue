@@ -6,7 +6,7 @@ import sidebar from './SideBar.vue'
 const navbarItems = [
   { path: '/', text: 'Home' },
   { path: '/demo1', text: 'Demo 1' },
-  { path: '/demo2', text: 'Demo 2' }
+  { path: '/demo2', text: 'Demo 2' },
 ]
 
 const sidebarItems = [
@@ -17,15 +17,15 @@ const sidebarItems = [
         path: '/demo1',
         text: 'Demo 1',
         icon: 'bi bi-1-square',
-        colour: 'text-success'
+        colour: 'text-success',
       },
       {
         path: '/demo2',
         text: 'Demo 2',
         icon: 'bi bi-2-square',
-        colour: 'text-success'
-      }
-    ]
+        colour: 'text-success',
+      },
+    ],
   },
   {
     title: 'Dashboard Components',
@@ -34,16 +34,16 @@ const sidebarItems = [
         path: '/summary',
         text: 'Summary Components',
         icon: 'bi bi-card-heading',
-        colour: 'text-primary'
+        colour: 'text-primary',
       },
       {
         path: '/chart',
         text: 'Chart Components',
         icon: 'bi bi-graph-up',
-        colour: 'text-secondary'
-      }
-    ]
-  }
+        colour: 'text-secondary',
+      },
+    ],
+  },
 ]
 </script>
 
@@ -59,8 +59,8 @@ const sidebarItems = [
     <!-- Navbar -->
     <navbar
       :navbarItems="navbarItems"
-      :logoLight="'/src/assets/images/painel-light.png'"
-      :logoDark="'/src/assets/images/painel-dark.png'"
+      :logoLight="'/assets/images/painel-light.png'"
+      :logoDark="'/assets/images/painel-dark.png'"
       :title="'Modern Dashboard'" />
 
     <!-- Sidebar -->
@@ -68,8 +68,8 @@ const sidebarItems = [
       <sidebar
         :sidebarItems="sidebarItems"
         :brand="''"
-        :brandImageDark="'/src/assets/images/logo-dark.png'"
-        :brandImageLight="'/src/assets/images/logo-light.png'" />
+        :brandImageDark="'../../assets/images/logo-dark.png'"
+        :brandImageLight="'../../assets/images/logo-light.png'" />
     </div>
 
     <!-- Router -->
