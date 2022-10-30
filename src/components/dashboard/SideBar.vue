@@ -27,12 +27,12 @@ defineProps({
         class="sidebar-brand">
         <img
           v-if="brandImageLight != ''"
-          src="../../assets/images/logo-light.png"
+          :src="brandImageLight"
           class="hidden-dm sidebar-brand h-50"
           alt="brand image" />
         <img
           v-if="brandImageDark != ''"
-          src="../../assets/images/logo-dark.png"
+          :src="brandImageDark"
           class="hidden-lm sidebar-brand h-50"
           alt="brand image" />
         <span

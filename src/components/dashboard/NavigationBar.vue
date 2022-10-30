@@ -34,11 +34,11 @@ defineProps({
       href="/"
       class="navbar-brand">
       <img
-        src="../../assets/images/painel-light.png"
+        :src="logoLight"
         class="hidden-dm h-25"
         alt="company logo" />
       <img
-        src="../../assets/images/painel-dark.png"
+        :src="logoDark"
         class="hidden-lm h-25"
         alt="company logo" />
       <div v-if="title != ''">
