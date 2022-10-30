@@ -59,8 +59,8 @@ const sidebarItems = [
     <!-- Navbar -->
     <navbar
       :navbarItems="navbarItems"
-      :logoLight="'./src/assets/images/painel-light.png'"
-      :logoDark="'./src/assets/images/painel-dark.png'"
+      logoLight="/img/painel-light.png"
+      logoDark="/img/painel-dark.png"
       :title="'Modern Dashboard'" />
 
     <!-- Sidebar -->
@@ -68,8 +68,8 @@ const sidebarItems = [
       <sidebar
         :sidebarItems="sidebarItems"
         :brand="''"
-        :brandImageDark="'./src/assets/images/logo-dark.png'"
-        :brandImageLight="'./src/assets/images/logo-light.png'" />
+        brandImageDark="/img/logo-dark.png"
+        brandImageLight="/img/logo-light.png" />
     </div>
 
     <!-- Router -->
