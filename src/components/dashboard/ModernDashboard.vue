@@ -61,7 +61,7 @@ const sidebarItems = [
       :navbarItems="navbarItems"
       logoLight="/img/painel-light.png"
       logoDark="/img/painel-dark.png"
-      :title="'Modern Dashboard'" />
+      :title="'October Review'" />
 
     <!-- Sidebar -->
     <div class="sidebar">
