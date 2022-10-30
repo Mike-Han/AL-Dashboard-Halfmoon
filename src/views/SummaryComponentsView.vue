@@ -45,11 +45,11 @@ function randomizeArray(arg) {
       <p>
         Showcase of the summary components available in
         <img
-          src="/images/painel-dark.png"
+          :src="'./src/assets/images/painel-dark.png'"
           class="hidden-lm h-25 align-middle"
           alt="painel labs" />
         <img
-          src="/images/painel-light.png"
+          :src="'./src/assets/images/painel-light.png'"
           class="hidden-dm h-25 align-middle"
           alt="painel labs" />
       </p>
