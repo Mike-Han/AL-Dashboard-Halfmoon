@@ -5,56 +5,56 @@ const chartOptions = {
   chart: {
     id: 'vuechart-example',
     toolbar: {
-      show: false
-    }
+      show: true,
+    },
   },
   grid: {
-    show: false
+    show: true,
   },
   stroke: {
-    curve: 'smooth'
+    curve: 'smooth',
   },
   xaxis: {
     categories: [1991, 1992, 1993, 1994, 1995, 1996, 1997, 1998],
     labels: {
-      show: false
+      show: true,
     },
     axisBorder: {
       show: true,
       color: 'orange',
-      height: 5
+      height: 5,
     },
     axisTicks: {
-      show: false
-    }
+      show: true,
+    },
   },
   yaxis: {
     labels: {
-      show: false
-    }
+      show: true,
+    },
   },
   theme: {
     // eslint-disable-next-line no-undef
     mode: halfmoon.getPreferredMode() === 'dark-mode' ? 'dark' : 'light',
-    palette: 'palette1'
+    palette: 'palette1',
   },
   dataLabels: {
-    enabled: false
+    enabled: false,
   },
   legend: {
-    show: false
-  }
+    show: true,
+  },
 }
 
 const series = [
   {
     name: 'series1',
-    data: [31, 40, 28, 51, 42, 109, 100]
+    data: [31, 40, 28, 51, 42, 109, 100],
   },
   {
     name: 'series2',
-    data: [11, 32, 45, 32, 34, 52, 41]
-  }
+    data: [11, 32, 45, 32, 34, 52, 41],
+  },
 ]
 </script>
 
@@ -63,6 +63,7 @@ const series = [
     <VueApexCharts
       type="area"
       :options="chartOptions"
-      :series="series"></VueApexCharts>
+      :series="series"
+      :height="550"></VueApexCharts>
   </div>
 </template>
